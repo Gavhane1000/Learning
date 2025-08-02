@@ -3,13 +3,10 @@ function calculate(operation) {
   const num2 = parseFloat(document.getElementById("input2").value);
   const resultBox = document.getElementById("result");
 
-  if (isNaN(num1) || isNaN(num2)) {
-    resultBox.innerText = "Please enter both numbers.";
+  if (!input1 || !input2 || isNaN(num1) || isNaN(num2)) {
+    resultBox.innerText = "Please enter valid numbers.";
     return;
   }
-
-  let result;
-
   if (operation === "add") {
     result = num1 + num2;
   } else if (operation === "subtract") {
