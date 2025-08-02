@@ -1,0 +1,25 @@
+.container{
+    border: 1px solid black;
+    height: 30%;
+    width: 28%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.cal-container{
+    padding: 5px;
+}
+
+p{
+    padding: none;
+    margin: 0px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.btn{
+    padding-top: 10px;
+}
+
+#result{
+    color: rgb(60, 2, 69);
+}
