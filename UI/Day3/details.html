@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Submitted Details</title>
+</head>
+<body>
+  <h2>Submitted Contact Details</h2>
+  <div id="output"></div>
+
+  <script>
+    const data = localStorage.getItem("contactDetails");
+
+    if (data) {
+      const contact = JSON.parse(data);
+
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = `
+        <p><strong>Name:</strong> ${contact.name}</p>
+        <p><strong>Email:</strong> ${contact.email}</p>
+        <p><strong>Message:</strong> ${contact.message}</p>
+      `;
+    } else {
+      document.getElementById("output").innerText = "No data found.";
+    }
+  </script>
+</body>
+</html>
