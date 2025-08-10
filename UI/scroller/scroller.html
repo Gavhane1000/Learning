@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scroller.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="scroller">
+      <div class="btn left-btn" onclick="change('left')">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </div>
+      <div class="img-container" id="scroller-image">
+        <div class="heading" >
+            <p id="image-heading"></p>
+        </div>
+      </div>
+      <div class="btn right-btn" onclick="change('right')">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </div>
+    </div>
+    <script src="./scroller.js"></script>
+  </body>
+</html>
